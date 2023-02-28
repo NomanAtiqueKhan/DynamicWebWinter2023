@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- actions refers to what we want to do when user submits the form... -->
+    <!-- get method sends data as part of the URL
+    
+    while as post method sends data as part of the body of the document-->
+    <form
+      action="mailto:natique@conestogac.on.ca"
+      method="post"
+      name="register"
+    >
+      <label for="nm">Name</label>
+      <input
+        type="text"
+        id="nm"
+        name="nm"
+        placeholder="Enter your name here"
+        tabindex="1"
+        autofocus
+      />
+      <br />
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" name="pwd" tabindex="2" />
+      <br />
+      <input type="submit" value="Send Data" tabindex="3" />
+
+      <input type="reset" value="Clear data" tabindex="4 " />
+    </form>
+  </body>
+</html>

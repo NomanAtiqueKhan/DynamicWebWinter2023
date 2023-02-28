@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table with While loop!</title>
+
+    <script>
+      function getPlayers() {
+        let player = prompt("Enter the name of a player", "");
+        let points = prompt("Ente r the points of this player", "");
+        let table = "<table width='50%' border='1'>";
+        while (player != "done") {
+          table += "<tr>";
+          table += "<td>" + player + "</td>";
+          table += "<td>" + points + "</td>";
+          table += "</tr>";
+          player = prompt(
+            "Enter the name of a player or enter 'done' for finish",
+            " "
+          );
+          points = prompt(
+            "Enter the points this player has or 0 if finished",
+            " "
+          );
+        }
+        table += "</table>";
+        document.write(table);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Today's Players</h1>
+    <h3>Click to enter players' names</h3>
+
+    <p>
+      <input
+        type="button"
+        id="players"
+        value="Enter players"
+        onclick="getPlayers();"
+      />
+    </p>
+  </body>
+</html>

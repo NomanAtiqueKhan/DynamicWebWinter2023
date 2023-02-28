@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container-sm">
+    <h1>Forms in HTML and JavaScript!</h1>
+    <form id="data">
+      <label for="fnm">First Name</label>
+      <input
+        type="text"
+        id="fnm"
+        name="fnm"
+        placeholder="Your first name here"
+        autofocus
+        tabindex="1"
+        autocomplete="name"
+        class="form-control"
+      />
+
+      <label for="uname">User Name</label>
+
+      <input
+        type="text"
+        id="uname"
+        name="uname"
+        placeholder="Your user name here"
+        tabindex="2"
+        autocomplete="username"
+        class="form-control"
+      />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        tabindex="3"
+        placeholder="Enter your email here"
+        autocomplete="email"
+        class="form-control p-4"
+      />
+      <label for="date">Date</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        autocomplete="bday-day"
+        tabindex="4"
+        class="form-control"
+      />
+      <label for="problem">Problem</label>
+      <input
+        type="text"
+        id="problem"
+        name="problem"
+        tabindex="5"
+        placeholder="Enter you problem in detail here..."
+        list="problems"
+        class="form-control"
+      />
+      <datalist id="problems">
+        <option value="Network">Network</option>
+        <option value="Internet">Internet</option>
+
+        <option value="Website">Website</option>
+        <option value="User Interface">User Interface</option>
+      </datalist>
+
+      <textarea
+        name="comments"
+        id="comments"
+        cols="30"
+        rows="10"
+        tabindex="6"
+        placeholder="any special comments"
+        class="form-control mt-2"
+      ></textarea>
+
+      <label for="file">File</label>
+      <input
+        type="file"
+        id="file"
+        name="file"
+        tabindex="7"
+        class="form-control"
+      />
+
+      <input type="submit" value="Register" tabindex="8" />
+      <input
+        type="reset"
+        value="Clear form"
+        tabindex="9"
+        class="form-control"
+      />
+    </form>
+  </body>
+</html>

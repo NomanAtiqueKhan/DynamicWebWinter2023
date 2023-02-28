@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>January 26,2023</title>
+
+    <script>
+      //   function calculateTotal(purchaseAmt, taxRate) {
+      //     tax = purchaseAmt * taxRate;
+      //     total = purchaseAmt + tax;
+      //     document.write(`Your total is ${total}`);
+      //   }
+
+      function calculateTotal() {
+        let num1 = document.getElementById("n1").value;
+        let num2 = document.getElementById("n2").value;
+
+        let result = Number(num1) + Number(num2);
+        document.write(`Your result is ${result}`);
+        // console.log(num1);
+      }
+
+      function openWin() {
+        smallWindow = window.open("", "", "width=300, height=200");
+        smallWindow.document.write(
+          "<p>Hi again, old friend! <br/> Glad to see you today</p>"
+        );
+      }
+
+      function closeWin() {
+        smallWindow.close();
+      }
+
+      function getValue() {
+        let dog = document.getElementById("puppy");
+        let dogName = dog.innerHTML;
+        document.write("<h1>Your dog is not a terrier</h1>");
+        document.write("<h2>It is a ");
+        document.write(dogName);
+        document.write("</h2> ");
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="puppy" onclick="getValue()">Anything</h1>
+    <input type="button" value="Open a small window" onclick="openWin()" />
+    <input type="button" value="Close the window" onclick="closeWin()" />
+    <br />
+    <br />
+    <input type="text" id="n1" />
+    <input type="text" id="n2" />
+    <input type="button" value="Calculate" onclick="calculateTotal()" />
+  </body>
+</html>
