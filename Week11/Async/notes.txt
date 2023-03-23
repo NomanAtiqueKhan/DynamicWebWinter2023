@@ -7,3 +7,14 @@ Asynchronous JavaScript
 
 The APIs to get data from other resources:
 i) XMLHttpRequest
+ii) Fetch API
+A fetch api returns a promise with the required data
+
+
+2. Promises:
+
+A promise might get "resolve"
+or it might get "reject"
+
+
+3. Async/Await
