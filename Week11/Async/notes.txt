@@ -1,0 +1,9 @@
+Asynchronous JavaScript
+
+1. Callback functions
+2. Promises 
+3. Async/Await functions..
+
+
+The APIs to get data from other resources:
+i) XMLHttpRequest
