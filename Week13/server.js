@@ -33,7 +33,7 @@ app.post(
     var name = req.body.name;
     var email = req.body.email;
     res.render("contactthanks", { errors: errors.array() });
-    // res.render("contactthanks", { name: name, email: email });
+    // res.render("contactthanks", { name: name, email: email }); extra
   }
 );
 
